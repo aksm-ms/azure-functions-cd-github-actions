@@ -53,7 +53,8 @@ jobs:
           popd
 
       - name: Run Azure Functions action
-        uses: Azure/functions-action@v1
+        uses: aksm-ms/functions-action-1@releases/v1
+#         uses: Azure/functions-action@v1
         id: fa
         with:
           app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
