@@ -48,7 +48,7 @@ jobs:
         shell: bash
         run: |
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
-          npm ci
+          npm install
           npm run build:cd
           popd
 
